@@ -1,0 +1,257 @@
+body {
+	background-color: black;
+	margin: 32px;
+}
+
+.texture {
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	background: url(img/scratches.png) repeat center center;
+	background-size: cover;
+}
+
+.layout {
+	color:  white;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	border: 8px solid;
+	border-color: white;
+}
+
+.badge {
+	width: 100%;
+  	height: 100%;
+  	object-fit: contain;
+  	margin-bottom: -200px;
+}
+
+.left-dude {
+	left: 0;
+	margin-left: -8px;
+	width: 44%;
+	left:  -8px;
+}
+
+.right-dude {
+	float: right;
+	margin-right: -8px;
+	width: 44%;
+	z-index: 4;
+	position: relative;
+}
+
+.ants {
+	width: 100%;
+  	object-fit: contain;
+  	margin-bottom: -40px;
+}
+
+.footer {
+	width: 100%;
+  	object-fit: contain;
+}
+
+.col1 {
+	position: absolute;
+	right: 52px;
+	top: 52px;
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 180%;
+	text-align: right;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.rays {
+	position: absolute;
+	z-index: -1;
+	/*width: 80%;*/
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	margin-bottom: 0;
+	border: 8px solid;
+	border-color: white;
+	background: url(img/rays.svg) no-repeat center center;
+	background-size: cover;
+}
+
+
+@media only screen and (min-width : 1920px){
+	.col1 {
+	  left:0;
+	  right:0;
+
+	  margin-left: auto;
+	  margin-right: auto;
+
+	  width: 1860px;
+	}
+	.layout {
+		width: 1920px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		margin-bottom: 0;
+
+	}
+	.col1 {
+		font-size: 56px;
+	}
+	.rays {
+		margin-top: -420px;
+		height: 2000px;
+		width: 1200px;
+	}
+	.left-dude {
+		margin-top: -720px;
+	}
+	.right-dude {
+		padding-top: -60px;
+		margin-bottom: -300px;
+	}
+}
+
+@media only screen and (min-width : 1440px) and (max-width : 1919px) {
+	.col1 {
+		font-size: 40px;
+	}
+	.rays {
+		margin-top: -22%;
+		height: 1600px;
+		width: 60%
+	}
+	.left-dude {
+		margin-top: -420px;
+		width: 560px;
+	}
+	.right-dude {
+		padding-top: -60px;
+		margin-bottom: -300px;
+		width: 560px;
+	}
+}
+
+
+@media only screen and (min-width : 1366px) and (max-width : 1439px) {
+	.col1 {
+		font-size: 36px;
+	}
+	.rays {
+		margin-top: -22%;
+		height: 1520px;
+		width: 60%
+	}
+	.left-dude {
+		margin-top: -420px;
+		width: 532px;
+	}
+	.right-dude {
+		padding-top: -60px;
+		margin-bottom: -300px;
+		width: 580px;
+	}
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1365px) {
+	.col1 {
+		font-size: 28px;
+	}
+	.rays {
+		margin-top: -18%;
+		height: 1000px;
+		width: 60%
+	}
+	.left-dude {
+		margin-top: -420px;
+		width: 400px;
+	}
+	.right-dude {
+		padding-top: -20px;
+		margin-bottom: -200px;
+		width: 440px;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+	.col1 {
+		font-size: 20px;
+	}
+	.rays {
+		margin-top: -12%;
+		height: 900px;
+		width: 60%
+	}
+	.left-dude {
+		margin-top: -220px;
+		width: 300px;
+	}
+	.right-dude {
+		padding-top: 80px;
+		margin-bottom: -40px;
+		width: 328px;
+	}
+}
+
+@media only screen and (min-width : 414px) and (max-width : 767px) {
+	.layout {
+		width: 414px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		margin-bottom: 0;
+
+	}
+	.col1 {
+		font-size: 10px;
+		left:0;
+		right:0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 400px;
+	}
+	.rays {
+		margin-top: 48px;
+		height: 720px;
+		width: 308px;
+	}
+	.left-dude {
+		width: 224px;
+
+	}
+	.right-dude {
+		margin-top: -100px;
+		margin-bottom: -40px;
+		margin-left: 300px;
+		width: 248px;
+	}
+}
+
+
+@media only screen and (max-width : 413px) {
+
+	.col1 {
+		font-size: 8px;
+	}
+	.rays {
+		margin-top: 22%;
+		height: 500px;
+		width: 54%
+	}
+	.left-dude {
+		width: 196px;
+	}
+	.right-dude {
+		margin-top: -100px;
+		margin-bottom: -40px;
+		width: 216px;
+	}
+}

@@ -1,0 +1,42 @@
+
+/* лучи rays на сцене крутятся по кругу в бесконечном экстазе  */
+
+img.rays {
+animation: 20s linear 2s normal none infinite running rays;
+-webkit-animation: 20s linear 2s normal none infinite running rays;
+-o-animation: 20s linear 2s normal none infinite running rays;
+-ms-animation: 20s linear 2s normal none infinite running rays;
+-moz-animation: 20s linear 2s normal none infinite running rays;
+}
+@keyframes rays { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@-webkit-keyframes rays { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@-o-keyframes rays { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@-ms-keyframes rays { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@-moz-keyframes rays { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+
+/* появляющийся текст */
+
+div.col1 {
+animation: 2s linear 0s 1 running fadein;
+-webkit-animation: 2s linear 0s 1 running fadein;
+-o-animation: 2s linear 0s 1 running fadein;
+-ms-animation: 2s linear 0s 1 running fadein;
+-moz-animation: 2s linear 0s 1 running fadein;
+}
+@keyframes fadein { from { opacity: 0 } to { opacity: 100 } }
+@-webkit-keyframes fadein { from { margin-right: 100%; } to { margin-right: 0; } }
+@-o-keyframes fadein { from { margin-right: 100%; } to { margin-right: 0; } }
+@-ms-keyframes fadein { from { margin-right: 100%; } to { margin-right: 0; } }
+@-moz-keyframes fadein { from { margin-right: 100%; } to { margin-right: 0; } }
+
+
+/* проявляющаяся вывеска */
+
+img.badge {
+animation: 2s linear 0s 1 running fadein;
+-webkit-animation: 1s linear 0s 1 running fadein;
+-o-animation: 2s linear 0s 1 running fadein;
+-ms-animation: 2s linear 0s 1 running fadein;
+-moz-animation: 2s linear 0s 1 running fadein;
+}

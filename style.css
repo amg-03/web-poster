@@ -31,7 +31,7 @@ body {
 .left-dude {
 	left: 0;
 	margin-left: -8px;
-	width: 60%;
+	width: 44%;
 	left:  -8px;
 }
 
@@ -67,10 +67,22 @@ body {
 	color: #FFFFFF;
 }
 
-
-
-
-
+.stage {
+	position: absolute;
+	z-index: -1;
+	/*width: 80%;*/
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	margin-bottom: 0;
+	border: 8px solid;
+	border-color: white;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 @media only screen and (min-width : 1920px){
 	.col1 {
@@ -94,11 +106,12 @@ body {
 	.col1 {
 		font-size: 56px;
 	}
-	.luchi {
-		margin-top: -0px;
+	.stage {
+		margin-top: -420px;
 		height: 2000px;
 		width: 1200px;
 	}
+
 	.left-dude {
 		margin-top: -720px;
 	}
@@ -112,10 +125,10 @@ body {
 	.col1 {
 		font-size: 40px;
 	}
-	.luchi {
-		margin-top: -0px;
-		height: 2000px;
-		width: 1200px;
+	.stage {
+		margin-top: -22%;
+		height: 1600px;
+		width: 60%
 	}
 	.left-dude {
 		margin-top: -420px;
@@ -133,10 +146,10 @@ body {
 	.col1 {
 		font-size: 36px;
 	}
-	.luchi {
-		margin-top: -0px;
-		height: 2000px;
-		width: 1200px;
+	.stage {
+		margin-top: -22%;
+		height: 1520px;
+		width: 60%
 	}
 	.left-dude {
 		margin-top: -420px;
@@ -153,10 +166,10 @@ body {
 	.col1 {
 		font-size: 28px;
 	}
-	.luchi {
-		margin-top: -0px;
-		height: 2000px;
-		width: 1200px;
+	.stage {
+		margin-top: -18%;
+		height: 1000px;
+		width: 60%
 	}
 	.left-dude {
 		margin-top: -420px;
@@ -173,10 +186,10 @@ body {
 	.col1 {
 		font-size: 20px;
 	}
-	.luchi {
-		margin-top: -0px;
-		height: 2000px;
-		width: 1200px;
+	.stage {
+		margin-top: -12%;
+		height: 900px;
+		width: 60%
 	}
 	.left-dude {
 		margin-top: -220px;
@@ -207,10 +220,10 @@ body {
 		margin-right: auto;
 		width: 400px;
 	}
-	.luchi {
-		margin-top: -0px;
-		height: 2000px;
-		width: 1200px;
+	.stage {
+		margin-top: 48px;
+		height: 720px;
+		width: 308px;
 	}
 	.left-dude {
 		width: 224px;
@@ -230,10 +243,10 @@ body {
 	.col1 {
 		font-size: 8px;
 	}
-	.luchi {
-		margin-top: -0px;
-		height: 2000px;
-		width: 1200px;
+	.stage {
+		margin-top: 22%;
+		height: 500px;
+		width: 54%
 	}
 	.left-dude {
 		width: 196px;

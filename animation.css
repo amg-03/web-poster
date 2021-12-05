@@ -40,3 +40,55 @@ animation: 2s linear 0s 1 running fadein;
 -ms-animation: 2s linear 0s 1 running fadein;
 -moz-animation: 2s linear 0s 1 running fadein;
 }
+/* /////////////////// */
+/* муравьи прыгают, беснуются */
+
+img.ants {
+animation: 2s linear 10s 1 running up-down;
+-webkit-animation: 2s linear 0s 1 running up-down;
+-o-animation: 2s linear 0s 1 running up-down;
+-ms-animation: 2s linear 0s 1 running up-down;
+-moz-animation: 2s linear 0s 1 running up-down;
+}
+
+/* @keyframes up-down {
+    0% {padding-top: 0px}
+    50% {padding-top: 100px}
+    100% {padding-top: 200px}
+} */
+
+@keyframes up-down {
+  0% {left:0px; top:0px;}
+  25% {left:100px; top:0px;}
+  50% {left:100px; top:100px;}
+  75% {left:0px; top:100px;}
+  100% {left:0px; top:0px;}
+}
+
+/* правый музыкант качается*/
+
+img.left-dude {
+animation: 1s linear 0.3s normal none infinite running  naklon;
+transform-origin: 360px 900px;
+/* animation: 20s linear 2s normal none infinite running rays; */
+
+}
+@keyframes naklon {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* левый музыкант качается*/
+
+img.right-dude {
+animation: 1s linear 0.3s normal none infinite running  naklon2;
+transform-origin: 380px 730px;
+/* animation: 20s linear 2s normal none infinite running rays; */
+
+}
+@keyframes naklon2 {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}

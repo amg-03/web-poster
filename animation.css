@@ -68,8 +68,8 @@ animation: 2s linear 10s 1 running up-down;
 /* правый музыкант качается*/
 
 img.left-dude {
-animation: 1s linear 0.3s normal none infinite running  naklon;
-transform-origin: 360px 900px;
+animation: 2.2s linear 0.3s normal none infinite running  naklon;
+transform-origin: 43% 75%;
 /* animation: 20s linear 2s normal none infinite running rays; */
 
 }
@@ -82,8 +82,8 @@ transform-origin: 360px 900px;
 /* левый музыкант качается*/
 
 img.right-dude {
-animation: 1s linear 0.3s normal none infinite running  naklon2;
-transform-origin: 380px 730px;
+animation: 2.2s linear 0.3s normal none infinite running  naklon2;
+transform-origin: 48% 60%;
 /* animation: 20s linear 2s normal none infinite running rays; */
 
 }

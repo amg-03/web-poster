@@ -45,17 +45,65 @@ body {
 
 .ants {
 	width: 100%;
-  object-fit: contain;
-  margin-bottom: -100px;
+  	object-fit: contain;
+	margin-bottom: -100px;
 	display: inline-block;
 	position: relative;
 }
 
 .footer {
 	width: 100%;
-  object-fit: contain;
+	height: 360px;
+  	object-fit: contain;
 	display: inline-block;
 	position: relative;
+	background: url(img/footer.svg) top center no-repeat;
+	background-size: cover;
+}
+
+.left-white-guitar {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	padding-top: 5%;
+	width: 30%;
+}
+.left-red-guitar {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	padding-top: 5%;
+	width: 30%;
+}
+.date {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 30%;
+	padding-top: 5%;
+	margin: auto;
+}
+.right-white-guitar {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	margin: auto;
+	padding-top: 5%;
+	width: 30%;
+}
+.right-red-guitar {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	margin: auto;
+	padding-top: 5%;
+	width: 30%;
 }
 
 .col1 {
@@ -92,10 +140,8 @@ body {
 	.col1 {
 	  left:0;
 	  right:0;
-
 	  margin-left: auto;
 	  margin-right: auto;
-
 	  width: 1860px;
 	}
 	.layout {
@@ -112,7 +158,7 @@ body {
 	}
 	.stage {
 		margin-top: -420px;
-		height: 2000px;
+		height: 1900px;
 		width: 1200px;
 	}
 
@@ -128,10 +174,23 @@ body {
 @media only screen and (min-width : 1440px) and (max-width : 1919px) {
 	.col1 {
 		font-size: 40px;
+	  	left:0;
+	  	right:0;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	  	width: 1340px;
+	}
+	.layout {
+		width: 1380px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		margin-bottom: 0;
 	}
 	.stage {
-		margin-top: -22%;
-		height: 1600px;
+		margin-top: -280px;
+		height: 1200px;
 		width: 60%
 	}
 	.left-dude {
@@ -149,10 +208,23 @@ body {
 @media only screen and (min-width : 1366px) and (max-width : 1439px) {
 	.col1 {
 		font-size: 36px;
+	  	left:0;
+	  	right:0;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	  	width: 1200px;
+	}
+	.layout {
+		width: 1280px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		margin-bottom: 0;
 	}
 	.stage {
-		margin-top: -22%;
-		height: 1520px;
+		margin-top: -240px;
+		height: 1220px;
 		width: 60%
 	}
 	.left-dude {
@@ -169,10 +241,26 @@ body {
 @media only screen and (min-width : 1024px) and (max-width : 1365px) {
 	.col1 {
 		font-size: 28px;
+	  	left:0;
+	  	right:0;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	  	width: 960px;
+	}
+	.layout {
+		width: 1024px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		margin-bottom: 0;
+	}
+	.footer {
+		height: 320px;
 	}
 	.stage {
-		margin-top: -18%;
-		height: 1000px;
+		margin-top: -160px;
+		height: 800px;
 		width: 60%
 	}
 	.left-dude {
@@ -189,10 +277,26 @@ body {
 @media only screen and (min-width : 768px) and (max-width : 1023px) {
 	.col1 {
 		font-size: 20px;
+	  	left:0;
+	  	right:0;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	  	width: 660px;
+	}
+	.layout {
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		margin-bottom: 0;
+	}
+	.footer {
+		height: 220px;
 	}
 	.stage {
-		margin-top: -12%;
-		height: 900px;
+		margin-top: -60px;
+		height: 700px;
 		width: 60%
 	}
 	.left-dude {
@@ -207,6 +311,9 @@ body {
 }
 
 @media only screen and (min-width : 414px) and (max-width : 767px) {
+	body {
+		margin: 32px 8px;
+	}
 	.layout {
 		width: 414px;
 		margin-left: auto;
@@ -214,7 +321,6 @@ body {
 		left: 0;
 		right: 0;
 		margin-bottom: 0;
-
 	}
 	.col1 {
 		font-size: 10px;
@@ -226,7 +332,7 @@ body {
 	}
 	.stage {
 		margin-top: 48px;
-		height: 720px;
+		height: 560px;
 		width: 308px;
 	}
 	.left-dude {
@@ -239,18 +345,42 @@ body {
 		margin-left: 300px;
 		width: 248px;
 	}
+	.footer {
+		height: 120px;
+	}
+	.ants {
+		margin-bottom: -40px;
+	}
 }
 
 
 @media only screen and (max-width : 413px) {
-
+	body {
+		margin: 32px 8px;
+	}
+	.layout {
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		margin-bottom: 0;
+	}
+	.col1 {
+		font-size: 10px;
+		left:0;
+		right:0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 262px;
+	}
 	.col1 {
 		font-size: 8px;
 	}
 	.stage {
-		margin-top: 22%;
-		height: 500px;
-		width: 54%
+		margin-top: 92px;
+		height: 380px;
+		width: 200px;
 	}
 	.left-dude {
 		width: 196px;
@@ -259,5 +389,8 @@ body {
 		margin-top: -100px;
 		margin-bottom: -40px;
 		width: 216px;
+	}
+	.footer {
+		height: 120px;
 	}
 }

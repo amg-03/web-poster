@@ -1,12 +1,55 @@
+/* прыгающие муравьи под музыку баусингом  */
+img.ants {
+animation: updown 0.25s cubic-bezier(0.1,0.25,0.1,1) 2s infinite alternate both;
+-webkit-animation: updown 0.25s cubic-bezier(0.1,0.25,0.1,1) 2s infinite alternate both;
+-o-animation: updown 0.25s cubic-bezier(0.1,0.25,0.1,1) 2s infinite alternate both;
+-ms-animation: updown 0.25s cubic-bezier(0.1,0.25,0.1,1) 2s infinite alternate both;
+-moz-animation: updown 0.25s cubic-bezier(0.1,0.25,0.1,1) 2s infinite alternate both;
+}
+@keyframes updown { 0% { bottom: 0; } 100% { bottom: 1em; } }
+@-webkit-keyframes updown { 0% { bottom: 0; } 100% { bottom: 1em; } }
+@-o-keyframes updown { 0% { bottom: 0; } 100% { bottom: 1em; } }
+@-ms-keyframes updown { 0% { bottom: 0; } 100% { bottom: 1em; } }
+@-moz-keyframes updown { 0% { bottom: 0; } 100% { bottom: 1em; } }
+
+
+/* левый музыкант качается*/
+img.left-dude {
+animation: 2.2s linear 0.3s normal none infinite running  naklon; transform-origin: 43% 75%;
+-webkit-animation: 2.2s linear 0.3s normal none infinite running  naklon;
+-o-animation: 2.2s linear 0.3s normal none infinite running  naklon;
+-ms-animation: 2.2s linear 0.3s normal none infinite running  naklon;
+-moz-animation: 2.2s linear 0.3s normal none infinite running  naklon;
+}
+@keyframes naklon { 0% { transform: rotate(0deg); } 50% { transform: rotate(-15deg); } 100% { transform: rotate(0deg); } }
+@-webkit-keyframes naklon { 0% { transform: rotate(0deg); } 50% { transform: rotate(-15deg); } 100% { transform: rotate(0deg); } }
+@-o-keyframes naklon { 0% { transform: rotate(0deg); } 50% { transform: rotate(-15deg); } 100% { transform: rotate(0deg); } }
+@-ms-keyframes naklon { 0% { transform: rotate(0deg); } 50% { transform: rotate(-15deg); } 100% { transform: rotate(0deg); } }
+@-moz-keyframes naklon { 0% { transform: rotate(0deg); } 50% { transform: rotate(-15deg); } 100% { transform: rotate(0deg); } }
+
+
+/* правый музыкант качается*/
+img.right-dude {
+animation: 2.2s linear 0.3s normal none infinite running  naklon2; transform-origin: 48% 60%;
+-webkit-animation: 2.2s linear 0.3s normal none infinite running  naklon2;
+-o-animation: 2.2s linear 0.3s normal none infinite running  naklon2;
+-moz-animation: 2.2s linear 0.3s normal none infinite running  naklon2;
+-ms-animation: 2.2s linear 0.3s normal none infinite running  naklon2;
+}
+@keyframes naklon2 { 0% { transform: rotate(0deg); } 50% { transform: rotate(15deg); } 100% { transform: rotate(0deg); } }
+@-webkit-keyframes naklon2 { 0% { transform: rotate(0deg); } 50% { transform: rotate(15deg); } 100% { transform: rotate(0deg); } }
+@-o-keyframes naklon2 { 0% { transform: rotate(0deg); } 50% { transform: rotate(15deg); } 100% { transform: rotate(0deg); } }
+@-ms-keyframes naklon2 { 0% { transform: rotate(0deg); } 50% { transform: rotate(15deg); } 100% { transform: rotate(0deg); } }
+@-moz-keyframes naklon2 { 0% { transform: rotate(0deg); } 50% { transform: rotate(15deg); } 100% { transform: rotate(0deg); } }
+
 
 /* лучи rays на сцене крутятся по кругу в бесконечном экстазе  */
-
 img.rays {
-animation: 20s linear 2s normal none infinite running rays;
--webkit-animation: 20s linear 2s normal none infinite running rays;
--o-animation: 20s linear 2s normal none infinite running rays;
--ms-animation: 20s linear 2s normal none infinite running rays;
--moz-animation: 20s linear 2s normal none infinite running rays;
+animation: 20s linear 2s normal none infinite rays;
+-webkit-animation: 20s linear 2s normal none infinite rays;
+-o-animation: 20s linear 2s normal none infinite rays;
+-ms-animation: 20s linear 2s normal none infinite rays;
+-moz-animation: 20s linear 2s normal none infinite rays;
 }
 @keyframes rays { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 @-webkit-keyframes rays { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
@@ -16,79 +59,25 @@ animation: 20s linear 2s normal none infinite running rays;
 
 
 /* появляющийся текст */
-
 div.col1 {
-animation: 2s linear 0s 1 running fadein;
--webkit-animation: 2s linear 0s 1 running fadein;
--o-animation: 2s linear 0s 1 running fadein;
--ms-animation: 2s linear 0s 1 running fadein;
--moz-animation: 2s linear 0s 1 running fadein;
+animation: 2s linear 0s infinite running fadein;
+-webkit-animation: 2s linear 0s infinite running fadein;
+-o-animation: 2s linear 0s infinite running fadein;
+-ms-animation: 2s linear 0s infinite running fadein;
+-moz-animation: 2s linear 0s infinite running fadein;
 }
 @keyframes fadein { from { opacity: 0 } to { opacity: 100 } }
-@-webkit-keyframes fadein { from { margin-right: 100%; } to { margin-right: 0; } }
-@-o-keyframes fadein { from { margin-right: 100%; } to { margin-right: 0; } }
-@-ms-keyframes fadein { from { margin-right: 100%; } to { margin-right: 0; } }
-@-moz-keyframes fadein { from { margin-right: 100%; } to { margin-right: 0; } }
+@-webkit-keyframes fadein { from { opacity: 0 } to { opacity: 100 } }
+@-o-keyframes fadein { from { opacity: 0 } to { opacity: 100 } }
+@-ms-keyframes fadein { from { opacity: 0 } to { opacity: 100 } }
+@-moz-keyframes fadein { from { opacity: 0 } to { opacity: 100 } }
 
 
 /* проявляющаяся вывеска */
-
 img.badge {
 animation: 2s linear 0s 1 running fadein;
 -webkit-animation: 1s linear 0s 1 running fadein;
 -o-animation: 2s linear 0s 1 running fadein;
 -ms-animation: 2s linear 0s 1 running fadein;
 -moz-animation: 2s linear 0s 1 running fadein;
-}
-/* /////////////////// */
-/* муравьи прыгают, беснуются */
-
-img.ants {
-animation: 2s linear 10s 1 running up-down;
--webkit-animation: 2s linear 0s 1 running up-down;
--o-animation: 2s linear 0s 1 running up-down;
--ms-animation: 2s linear 0s 1 running up-down;
--moz-animation: 2s linear 0s 1 running up-down;
-}
-
-/* @keyframes up-down {
-    0% {padding-top: 0px}
-    50% {padding-top: 100px}
-    100% {padding-top: 200px}
-} */
-
-@keyframes up-down {
-  0% {left:0px; top:0px;}
-  25% {left:100px; top:0px;}
-  50% {left:100px; top:100px;}
-  75% {left:0px; top:100px;}
-  100% {left:0px; top:0px;}
-}
-
-/* правый музыкант качается*/
-
-img.left-dude {
-animation: 2.2s linear 0.3s normal none infinite running  naklon;
-transform-origin: 43% 75%;
-/* animation: 20s linear 2s normal none infinite running rays; */
-
-}
-@keyframes naklon {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(-15deg); }
-  100% { transform: rotate(0deg); }
-}
-
-/* левый музыкант качается*/
-
-img.right-dude {
-animation: 2.2s linear 0.3s normal none infinite running  naklon2;
-transform-origin: 48% 60%;
-/* animation: 20s linear 2s normal none infinite running rays; */
-
-}
-@keyframes naklon2 {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(15deg); }
-  100% { transform: rotate(0deg); }
 }

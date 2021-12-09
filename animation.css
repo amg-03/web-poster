@@ -81,3 +81,47 @@ animation: 2s linear 0s 1 running fadein;
 -ms-animation: 2s linear 0s 1 running fadein;
 -moz-animation: 2s linear 0s 1 running fadein;
 }
+
+/* левая белая гитара */
+img.left-white-guitar {
+  animation: 2.2s linear 0.3s infinite running naklon3;
+}
+
+@keyframes naklon3 {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* левая красная гитара */
+img.left-red-guitar {
+  animation: 2.2s linear 0.3s infinite running naklon4;
+}
+
+@keyframes naklon4 {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* правая белая гитара */
+img.right-white-guitar {
+  animation: 2.2s linear 0.3s infinite running naklon3;
+}
+
+@keyframes naklon3 {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* правая красная гитара */
+img.right-red-guitar {
+  animation: 2.2s linear 0.3s infinite running naklon4;
+}
+
+@keyframes naklon4 {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-15deg); }
+  100% { transform: rotate(0deg); }
+}

@@ -26,7 +26,8 @@ animation: 2.2s linear 0.3s normal none infinite running  naklon; transform-orig
 @-ms-keyframes naklon { 0% { transform: rotate(0deg); } 50% { transform: rotate(-15deg); } 100% { transform: rotate(0deg); } }
 @-moz-keyframes naklon { 0% { transform: rotate(0deg); } 50% { transform: rotate(-15deg); } 100% { transform: rotate(0deg); } }
 
-img.left-dude:hover, img.right-dude:hover, img.date:hover, img.badge:hover {
+/* img.left-dude:hover, img.right-dude:hover, img.date:hover, img.badge:hover { */
+img.date:hover, img.badge:hover {
 animation: bounce 1s infinite;
 -webkit-animation: bounce 1s infinite;
 -o-animation: bounce 1s infinite;
